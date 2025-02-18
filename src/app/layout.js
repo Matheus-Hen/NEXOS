@@ -30,11 +30,11 @@ export default function RootLayout({ children, theme }) {
   return (
     <html lang="pt-br" data-bs-theme={mode}>
       <body
-        className={`${geits.className} antialiased `}>
+        className={`${geits.className} antialiased  `}>
         <AddBootstrap />
-        <nav className="navbar bg-body-tertiary fixed-top">
-          <div className="container-fluid">
-            <div className="flex flex-row-reverse items-center ">
+        <nav className="navbar bg-body-tertiary  fixed-top">
+          <div className="container-fluid ">
+            <div className="flex flex-row-reverse  items-center ">
               <h2 className="pl-1 mb-0">Nexos</h2>
               <Image src={Nexos} className=" bg-white" priority={true} quality={100} width={50} height={20} alt="logo" />
             </div>

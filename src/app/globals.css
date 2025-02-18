@@ -74,8 +74,8 @@ input:checked + .slider:before {
 
 /* From Uiverse.io by Smit-Prajapati */ 
 .cartao {
-  width: 500px;
-  height: 400px;
+  width: 1360px;
+  height: 540px;
   background: black;
   position: relative;
   display: grid;
@@ -85,25 +85,29 @@ input:checked + .slider:before {
   transition: all 0.5s ease-in-out;
 }
 
-#logo-main, #logo-second {
-  height: 100%;
-}
+
 
 #logo-main {
-  fill: #bd9f67;
+  fill: #f8f7f4;
 }
-
+.logo2{
+  display: none;
+}
+.logo3{
+  display: none;
+}
 #logo-second {
+  height: 10px;
   padding-bottom: 10px;
   fill: none;
-  stroke: #bd9f67;
+  stroke: #faf9f7;
   stroke-width: 1px;
 }
 
 .border {
   position: absolute;
   inset: 0px;
-  border: 2px solid #bd9f67;
+  border: 2px solid #f7f6f5;
   opacity: 0;
   transform: rotate(10deg);
   transition: all 0.5s ease-in-out;
@@ -114,13 +118,13 @@ input:checked + .slider:before {
   left: 50%;
   bottom: 13px;
   transform: translateX(-50%);
-  font-size: 6px;
+  font-size: 15px;
   text-transform: uppercase;
   padding: 0px 5px 0px 8px;
-  color: #bd9f67;
+  color: #fafafa;
   background: #243137;
   opacity: 0;
-  letter-spacing: 7px;
+  letter-spacing: 1px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -131,19 +135,23 @@ input:checked + .slider:before {
 .content .logo {
   height: 50px;
   position: relative;
-  width: 35px;
+  width: 55px;
+  left: 5;
   overflow: hidden;
   transition: all 1s ease-in-out;
 }
 
 .content .logo .logo1 {
-  height: 50px;
+  height: 60px;
   position: absolute;
   left: 0;
+  color: black;
+  text-shadow: #ededed 1px 1 5px;
+  width: 250px;
 }
 
 .content .logo .logo2 .logo3 {
-  height: 33px;
+  height: 3px;
   position: absolute;
   left: 30px;
 }
@@ -162,11 +170,11 @@ input:checked + .slider:before {
   top: 50%;
   transform: translate(-50%, -50%);
   margin-top: 30px;
-  color: #bd9f67;
+  color: #fdfcfa;
   padding-left: 8px;
-  font-size: 11px;
+  font-size: 19px;
   opacity: 0;
-  letter-spacing: none;
+  text-shadow: gray 1px 1 5px;
   transition: all 0.5s ease-in-out 0.5s;
 }
 
@@ -177,6 +185,7 @@ input:checked + .slider:before {
 
 .cartao:hover .logo {
   width: 250px;
+  left: 25px;
   animation: opacity 1s ease-in-out;
   height: 100px;
 }
@@ -199,20 +208,25 @@ input:checked + .slider:before {
 }
 .cartao:hover .logo2{
   width: 250px;
-  left: 10px;
+  left: 70px;
   color: black;
   text-shadow: #ededed 1px 1 5px;
+  display: block;
 }
 .cartao:hover .logo3{
+  order: 1;
   color: black;
   text-shadow: #ededed 1px 1 5px;
   width: 250px;
+  display: block;
 }
 
 .cartao:hover .logo1{
-  width: 50px;
-  left: 70px;
-  z-index: -30px;
+  order: 2;
+  color: black;
+  text-shadow: #ededed 1px 1 5px;
+  width: 250px;
+  left: 83px;
 }
 .cartao:hover .trail {
   animation: trail 1s ease-in-out;
@@ -238,22 +252,22 @@ input:checked + .slider:before {
 
 @keyframes trail {
   0% {
-    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(243, 242, 240) 100%);
     opacity: 0;
   }
 
   30% {
-    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(248, 247, 246) 100%);
     opacity: 1;
   }
 
   70% {
-    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
+    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(255, 255, 254) 100%);
     opacity: 1;
   }
 
   95% {
-    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
+    background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(252, 252, 251) 100%);
     opacity: 0;
   }
 }
