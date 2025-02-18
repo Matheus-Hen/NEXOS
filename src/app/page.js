@@ -1,7 +1,6 @@
 
 import "@/app/globals.css"
-import Nexos from '../public/nexos.svg'
-import Image from 'next/image';
+
 import localFont from 'next/font/local'
 
 const dreamFont = localFont({
@@ -12,7 +11,7 @@ const dreamFont = localFont({
 const Card = () => {
 
     return (
-        <div className="cartao">
+        <div className="cartao bg-cover   ">
             <div className="border"></div>
             <div className="content">
                 <div className="logo flex">
